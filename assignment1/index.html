@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskDelegator | Work Calendar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- styling -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-gray-100 py-4">
+    <div class="max-w-7xl mx-auto rounded">
+      <h2 class="text-xl font-semibold mb-4">Add Work Calendar</h2>
+
+      <div class="card-content bg-white p-4 rounded-lg shadow-md">
+        <!-- Checkbox for half working day and weekend -->
+        <div class="mb-4">
+          <label class="block font-medium text-gray-700 mb-1"
+            >Define weekend</label
+          >
+          <input type="checkbox" id="halfDayCheckbox" class="mr-2" />
+          <label for="half-working" class="text-gray-700"
+            >Half working day & half weekend</label
+          >
+        </div>
+
+        <div class="bg-gray-100 p-5 overflow-x-auto">
+          <table class="table">
+            <thead class="text-center">
+              <tr>
+                <td>
+                  <label for=""></label>
+                </td>
+                <td>
+                  <label for="all">All</label>
+                </td>
+                <td>
+                  <label for="all">1st</label>
+                </td>
+                <td>
+                  <label for="all">2nd</label>
+                </td>
+                <td>
+                  <label for="all">3rd</label>
+                </td>
+                <td>
+                  <label for="all">4th</label>
+                </td>
+                <td>
+                  <label for="all">5th</label>
+                </td>
+              </tr>
+            </thead>
+            <tbody class="py-4">
+              <tr>
+                <td
+                  class="px-4 py-2 bg-white rounded-md shadow-sm text-left days"
+                >
+                  Sunday
+                </td>
+                <td
+                  class="px-4 py-2 bg-white rounded-md shadow-sm all-checkboxes"
+                >
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-4 py-2 bg-white rounded-md shadow-sm text-left days"
+                >
+                  Monday
+                </td>
+                <td
+                  class="px-4 py-2 bg-white rounded-md shadow-sm all-checkboxes"
+                >
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-4 py-2 bg-white rounded-md shadow-sm text-left days"
+                >
+                  Tuesday
+                </td>
+                <td
+                  class="px-4 py-2 bg-white rounded-md shadow-sm all-checkboxes"
+                >
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-4 py-2 bg-white rounded-md shadow-sm text-left days"
+                >
+                  Wednesday
+                </td>
+                <td
+                  class="px-4 py-2 bg-white rounded-md shadow-sm all-checkboxes"
+                >
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-4 py-2 bg-white rounded-md shadow-sm text-left days"
+                >
+                  Thursday
+                </td>
+                <td
+                  class="px-4 py-2 bg-white rounded-md shadow-sm all-checkboxes"
+                >
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-4 py-2 bg-white rounded-md shadow-sm text-left days"
+                >
+                  Friday
+                </td>
+                <td
+                  class="px-4 py-2 bg-white rounded-md shadow-sm all-checkboxes"
+                >
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-4 py-2 bg-white rounded-md shadow-sm text-left days"
+                >
+                  Saturday
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm">
+                  <input type="checkbox" class="text-blue-600" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" class="text-blue-600" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" class="text-blue-600" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" class="text-blue-600" />
+                </td>
+                <td class="px-4 py-2 bg-white rounded-md shadow-sm large-width">
+                  <input type="checkbox" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Calendar Year Definition Label -->
+        <div class="mt-4">
+          <label class="block font-medium text-gray-700 mb-1"
+            >Calendar year definition</label
+          >
+        </div>
+      </div>
+      <!-- Buttons -->
+      <div class="mt-4 flex justify-start">
+        <button class="bg-blue-600 text-white py-2 px-4 rounded">Save</button>
+        <button
+          class="bg-white text-gray-700 py-2 px-4 rounded ml-2 border border-gray-300 hover:bg-gray-100"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+    <!-- Dropdown js code -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.authentication-wrapper.authentication-basic .authentication-inner {
+    max-width: 600px !important;
+}
+/* Add a red border to invalid fields */
+.is-invalid {
+    border-color: #dc3545;
+  }
+  
+  /* Style the error message */
+  .error-message {
+    color: #dc3545;
+    font-size: 0.875em;
+    margin-top: 0.25rem;
+  }
+  

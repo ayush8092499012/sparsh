@@ -1,0 +1,188 @@
+/* GENERA: CSS */
+.ml-1 {
+  margin-left: 0.75em !important;
+}
+.ml-2 {
+  margin-left: 1.752em !important;
+}
+
+/* /GENERA: CSS */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  /* padding: 20px; */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(218, 199, 223, 0.697);
+}
+.form-title {
+  background-color: #4b0082;
+  color: #fff;
+}
+.form-title h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 1.275rem;
+}
+#candidateForm {
+  padding: 20px;
+}
+.form-group .form-label {
+  display: block;
+  font-size: 0.754rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.form-group .form-control {
+  padding: 8px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #e6e5e5;
+  /* margin-bottom: 10px; */
+}
+.form-group .status-group {
+  display: flex;
+}
+.form-group .status-group .status-input {
+  margin-top: 10px;
+}
+.form-group .preview-btn {
+  background-color: #4b0082;
+  color: #fff;
+  border: 2px solid #4b0082;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 0.987rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.error {
+  font-size: 0.754rem;
+  color: red;
+  margin-top: 5px;
+}
+.error-border {
+  border: 1px solid red !important;
+}
+
+/* Preview modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+  animation: fadeIn 0.5s; /* Fade-in animation */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* Center the modal */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  animation: slideIn 0.5s; /* Slide-in animation */
+}
+.modal-header {
+  background-color: #4b0082;
+  color: #fff;
+}
+.modal-header,
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.modal-body{
+  padding: 10px 20px;
+}
+.modal-footer {
+  justify-content: start !important;
+  border: 1px solid #d2d0d0;
+}
+.close-btn {
+  color: #666464;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.975rem;
+  margin: 0 10px;
+  padding: 5px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#sendBtn {
+  padding: 8px;
+  background-color: #4b0082; /* Green */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#sendBtn:hover {
+  background-color: #8013cd; /* Darker green */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Fade-out animation */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 100% !important;
+  }
+}
+/* /Preview modal */

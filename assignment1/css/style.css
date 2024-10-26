@@ -1,0 +1,22 @@
+table {
+  width: 100%;
+  border-collapse: separate !important; /* This allows for spacing to work */
+  border-spacing: 10px; /* Set vertical spacing (top and bottom) between rows */
+}
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
+table tbody td {
+  white-space: nowrap;
+}
+.all-checkboxes {
+  width: 10px;
+}
+.days {
+  width: 200px;
+}
+.large-width {
+  width: 150px;
+  text-align: center;
+}
